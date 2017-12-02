@@ -2,8 +2,8 @@
 
 import sys
 
-args = sys.argv[1:]
-captcha = args[0]
+with open("input.txt", "r") as f:
+    captcha = f.read()
 sum_captcha = 0
 match_dist = len(captcha)/2
 
